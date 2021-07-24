@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test thread-count="3" name="edge Test(failed)" parallel="tests">
+    <parameter name="browser" value="edgebrowser"/>
+    <classes>
+      <class name="org.crossBrowser.useFlipKart">
+        <methods>
+          <include name="tc1" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- org.crossBrowser.useFlipKart -->
+    </classes>
+  </test> <!-- edge Test(failed) -->
+  <test thread-count="3" name="FireFox Test(failed)" parallel="tests">
+    <parameter name="browser" value="firefoxbroser"/>
+    <classes>
+      <class name="org.crossBrowser.useFlipKart">
+        <methods>
+          <include name="tc1" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- org.crossBrowser.useFlipKart -->
+    </classes>
+  </test> <!-- FireFox Test(failed) -->
+  <test thread-count="3" name="Chrome Test(failed)" parallel="tests">
+    <parameter name="browser" value="chromebrowser"/>
+    <classes>
+      <class name="org.crossBrowser.useFlipKart">
+        <methods>
+          <include name="tc1" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- org.crossBrowser.useFlipKart -->
+    </classes>
+  </test> <!-- Chrome Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
